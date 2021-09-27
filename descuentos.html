@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y Descuentos | curso práctico de javascript de platzi</title>
+    <link rel="stylesheet" href="./descuentos.css"> 
+</head>
+<body>
+    <header class="cabecera">
+        <h1>Porcentajes y descuentos</h1>
+        <p>Este es el segundo taller del curso práctico de JavaScript de Platzi
+            <br>Aqui podras saber cual es el precio final de un producto con descuento
+        </p>
+        <p id="cajita">Mi LinkedIn <a id="perfil_linkedin" href="https://www.linkedin.com/in/dylan-peralta-a947a4217/"> @DylanPeralta</a></p>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li class="menu-item" id="menu-item-1"><a href="./index.html">Inicio</a></li>
+            <li class="menu-item" id="menu-item-2"><a href="./figuras.html">Taller#1: Porcentajes</a></li>
+            <li class="menu-item" id="menu-item-3"><a href="./descuentos.html">Taller#2: Estadisticas</a></li>
+            <li class="menu-item" id="menu-item-4"><a href="./promedio.html">Taller#3: Salarios</a></li>
+        </ul>
+    </nav>
+
+    
+    <section class="seccion_principal">
+        <h3>Averigua del precio con descuento de tus productos</h3>
+        <label for="inputPrice">Escribe el precio del preducto</label>
+        <input id="inputPrice" type="number" placeholder="Precio"/>
+        
+        <br>
+        
+        <label for="inputDesc">Escribe el descuento de tu producto</label>
+        <input id="inputDesc" type="number" placeholder="Descuento">
+        
+        <br><br>
+        
+        <button type="button" onclick="calcularDescuento()">
+            Calcular Descuento
+        </button>
+        
+        <br><br>
+        
+        <label for="inputCoupon">Escribe tu cupon con descuento</label>
+        <input id="inputCoupon" type="text" placeholder="Introduce cupon"/>
+
+        <br><br>
+
+        <button type="button" onclick="precioFinal()">
+            Calcular
+        </button>
+
+        <p id="ResultP"></p>
+    </section>
+    <section id="cupones_lista">
+        <h3>Cupones disponibles:</h3>
+        <ul>   
+            <li>cupon1</li>
+            <li>cupon2</li>
+            <li>cupon3</li>
+        </ul> 
+    </section>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>

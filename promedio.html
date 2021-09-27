@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./promedio.css">
+</head>
+<body>
+    <header id="cabecera">
+        <h1>Promedio</h1>
+        <p>Este es el tercer taller del curso práctico de JavaScript
+            <br>Aqui podras realizar las opereraciones de estadisticas más usadas
+        </p>
+        <p id="cajita">Mi LinkedIn <a id="perfil_linkedin" href="https://www.linkedin.com/in/dylan-peralta-a947a4217/"> @DylanPeralta</a></p>
+    </header>
+    
+    <nav>
+        <ul class="menu">
+            <li class="menu-item" id="menu-item-1"><a href="./index.html">Inicio</a></li>
+            <li class="menu-item" id="menu-item-2"><a href="./figuras.html">Taller#1: Porcentajes</a></li>
+            <li class="menu-item" id="menu-item-3"><a href="./descuentos.html">Taller#2: Estadisticas</a></li>
+            <li class="menu-item" id="menu-item-4"><a href="./promedio.html">Taller#3: Salarios</a></li>
+        </ul>
+    </nav>
+
+    <form id="secciones">
+        <section id="seccion_promedio">
+            <header>
+                <h2>Cálculos:</h2>
+                        <div class="select">
+                            <select class="" id="formulaSelect" name="select" onchange="switchFormula()">
+                                <option value="1" selected>Media Aritmetica</option>
+                                <option value="2">Media Armonica</option>
+                                <option value="3">Media Geometrica</option>
+                                <option value="4">Moda</option>
+                                <option value="5">Mediana</option>
+                            </select>
+                        </div>
+            </header>
+
+            <h3>Calculadora de media aritmetica</h3>
+            <br>
+            <label>
+                Ingrese un valor a la lista: 
+            </label>
+            <br>
+            <input id="inputPromedio" type="text" placeholder="Ingresar valor"/>
+            <button type="button" onclick="addListNumber()" min="0">Agregar Elemento</button>
+            <br>
+            
+            <h5>Elementos:</h5>
+            <ul id="listaElementos">
+            </ul>
+            
+            <br><br>
+            
+            <button type="button" id="btn-render" onclick="switchFormula()">
+                Promedio
+            </button>
+            <p id="ResultP"></p>
+        
+        </section>
+    </form>
+
+    <script src="./promedio.js"></script>
+</body>
+</html>

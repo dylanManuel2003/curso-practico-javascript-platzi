@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas | curso práctico de javascript de platzi</title>
+    <link rel="stylesheet" href="./figuras.css">
+</head>
+<body>
+    <header class="cabecera">
+        <h1>
+            Figuras geométricas
+        </h1>
+        <br>
+        <p>
+            Este es el primer taller del curso práctico de JavaScript<br>
+            Aqui podras sacar perimetros y areas de figuras basicas.
+        </p>
+        <p id="cajita">Mi LinkedIn <a id="perfil_linkedin" href="https://www.linkedin.com/in/dylan-peralta-a947a4217/"> @DylanPeralta</a></p>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li class="menu-item" id="menu-item-1"><a href="./index.html">Inicio</a></li>
+            <li class="menu-item" id="menu-item-2"><a href="./figuras.html">Taller#1: Porcentajes</a></li>
+            <li class="menu-item" id="menu-item-3"><a href="./descuentos.html">Taller#2: Estadisticas</a></li>
+            <li class="menu-item" id="menu-item-4"><a href="./promedio.html">Taller#3: Salarios</a></li>
+        </ul>
+    </nav>
+
+    <div class="secciones">
+    <section class="section_cuadrado">
+       <h2>Calcula el área y perímetro de un Cuadrado</h2>
+       <br>
+       <label>
+        Escribe cuánto mide cada lado de tu Cuadrado:
+       </label>
+       <input id="input_cuadrado" type="number"/>
+       <button type="button" onclick="calcularPerimetroCuadrado()">
+            Calcular Perímetro
+       </button>
+       <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular Área
+       </button>
+       <h5>Resultado:</h5>
+       <br>
+       <p id="resultado_cuadrado"></p>
+   </section> 
+
+   <section class="section_triangulo">
+        <h2>Calcula el área y perímetro de un Triángulo</h2>
+        <br>
+        <label>
+        Escribe las medidas de cada lado de tu Triángulo:
+        </label>
+        <input id="input_triangulo--lado1" type="number" placeholder="Lado 1"/>
+        <input id="input_triangulo--lado2" type="number" placeholder="Lado 2"/>
+        <input id="input_triangulo--base" type="number" placeholder="Base"/>
+        <input id="input_triangulo--altura" type="number" placeholder="Altura"/>
+        <button type="button" onclick="calcularPerimetroTriangulo()">
+            Calcular Perímetro
+        </button>
+        <button type="button" onclick="calcularAreaTriangulo()">
+            Calcular Área
+        </button>
+
+        <h5>Resultado:</h5>
+        <br>
+        <p id="resultado_triangulo"></p>
+    </section> 
+
+    <section class="section_circulo">
+        <h2>Descubre las medidas que necesitas de un Círculo</h2>
+        <br>
+        <label>
+        Escribe cuánto mide el radio de tu Círculo:
+        </label>
+        <input id="input_circulo" type="number" placeholder="Radio"/>
+        <button type="button" onclick="calcularPerimetroCirculo()">
+            Calcular Perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCirculo()">
+            Calcular Área
+        </button>
+        <h5>Resultado:</h5>
+        <br>
+        <p id="resultado_circulo"></p>
+    </section> 
+
+    <section class="section_rectangulo"> 
+        <h2>Calcula el área y perímetro de un Rectángulo</h2>
+        <br>
+        <label>
+            Escribe los lados de tu Rectángulo:
+        </label>
+        
+        <input id="input_rectangulo--lado1" type="number" placeholder="Lado 1"/>
+        <input id="input_rectangulo--lado2" type="number" placeholder="Lado 2"/>
+        
+        <button type="button" onclick="calcularPerimetroRectangulo()">
+            Calcular Perímetro
+        </button>
+
+        <button type="button" onclick="calcularAreaRectangulo()">
+            Calcular Área
+        </button>
+        
+        <h5>Resultado:</h5>
+        <br>
+        <p id="resultado_rectangulo"></p>
+    </section>
+    </div>
+
+    <script src="./figuras.js"></script>
+</body>
+</html>
