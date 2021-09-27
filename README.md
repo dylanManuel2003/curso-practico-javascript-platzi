@@ -1,6 +1,6 @@
 # curso-practico-javascript-platzi
 un repositorio para trabajar en los talleres del curso practico de javascript en platzi
-
+sitio web: https://dylanmanuel2003.github.io/curso-practico-javascript-platzi/index.html
 ...
 
 ## Taller #1: figuras geométricas
